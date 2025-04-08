@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IceTea Cafe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top dangrek-regular">
+      <div class="container">
+        <a class="navbar-brand" href="#">អាយធី កាហ្វេ</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">ទំព័រដើម</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">ម៉ឺនុយ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">អំពីពួកយើង</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">ទំនាក់ទំនង</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="btn btn-outline-primary" href="#order">កម្មង់ Online</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section text-center dangrek-regular">
+      <div class="container">
+        <h1 class="hero-title display-3 fw-bold mb-4">&ltIT = តែទឹកកក&gt</h1>
+        <p class="hero-subtitle lead mb-5">ផឹកកាហ្វេពេលសរសេរកូដ - The Best!</p>
+        <a href="#menu" class="btn btn-primary btn-lg px-4 me-2">មើល ម៉ឺនុយ</a>
+        <a href="#order" class="btn btn-outline-primary btn-lg px-4"
+          >កម្មង់ ឥឡូវនេះ</a
+        >
+      </div>
+    </section>
+
+    <section class="container mb-5 dangrek-regular" id="menu">
+      <h2 class="section-title">ម៉ឺនុយ ពិសេស</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://images.pexels.com/photos/1194030/pexels-photo-1194030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="card-img-top"
+              alt="Specialty Tea"
+            />
+            <div class="card-body">
+              <span class="badge badge-new mb-2">NEW</span>
+              <h5 class="card-title">IT = តែទឹកកក</h5>
+              <p class="card-text">តែទឹកកកពិសេសរបស់យើង​ ត្រជាក់ដល់បេះដូង</p>
+              <p class="price">$1.50</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              class="card-img-top"
+              alt="Specialty Coffee"
+            />
+            <div class="card-body">
+              <span class="badge badge-new mb-2">NEW</span>
+              <h5 class="card-title">កាហ្វេទឹកដោះគោស្រស់</h5>
+              <p class="card-text">
+                កាហ្វេទឹកដោះគោស្រស់ ជា​​​ភេសជ្ជះពិសេសប្រចាំហាងរបស់យើង
+              </p>
+              <p class="price">$2.00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://images.pexels.com/photos/2846337/pexels-photo-2846337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="card-img-top"
+              alt="Avocado Toast"
+            />
+            <div class="card-body">
+              <span class="badge badge-popular mb-2">POPULAR</span>
+              <h5 class="card-title">ការ៉េមសូកូឡា</h5>
+              <p class="card-text">ការ៉េមសូកូឡាជាមួយ topping</p>
+              <p class="price">$3.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://images.pexels.com/photos/1803516/pexels-photo-1803516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="card-img-top"
+              alt="Pancake Stack"
+            />
+            <div class="card-body">
+              <span class="badge badge-popular mb-2">Fresh</span>
+              <h5 class="card-title">ដូងត្រជាក់</h5>
+              <p class="card-text">ទឹកដូង​ រស់ជាតិទឹកដូង</p>
+              <p class="price">$1.50</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mb-5 dangrek-regular">
+      <h2 class="section-title">ម៉ឺនុយ</h2>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="menu-category">Hot Drinks ( ក្ដៅ )</h3>
+          <div class="list-group">
+            <div class="list-group-item bg-transparent border-secondary">
+              <div class="d-flex justify-content-between">
+                <h5 class="mb-1">IT Espresso</h5>
+                <span class="price">$2.00</span>
+              </div>
+              <p class="mb-1 small">កាហ្វេ espresso សម្រាប់ IT</p>
+            </div>
+            <div class="list-group-item bg-transparent border-secondary">
+              <div class="d-flex justify-content-between">
+                <h5 class="mb-1">IT Cappuccino</h5>
+                <span class="price">$2.00</span>
+              </div>
+              <p class="mb-1 small">IT Espresso ជាមួយទឹកដោះគោនិងពពុះ</p>
+            </div>
+            <div class="list-group-item bg-transparent border-secondary">
+              <div class="d-flex justify-content-between">
+                <h5 class="mb-1">កាហ្វេទឹកដោះគោស្រស់</h5>
+                <span class="price">$2.00</span>
+              </div>
+              <p class="mb-1 small">
+                កាហ្វេទឹកដោះគោស្រស់ក្ដៅ ជា​​​ភេសជ្ជះពិសេសប្រចាំហាងរបស់យើង
+              </p>
+            </div>
+            <div class="list-group-item bg-transparent border-secondary">
+              <div class="d-flex justify-content-between">
+                <h5 class="mb-1">សូកូឡាក្តៅ</h5>
+                <span class="price">$1.50</span>
+              </div>
+              <p class="mb-1 small">សូកូឡា ជាមួយ cream</p>
+            </div>
+          </div>
+
+          <h3 class="menu-category">Breakfast ( អាហារពេលព្រឹក​ )</h3>
+          <div class="list-group">
+            <div class="list-group-item bg-transparent border-secondary">
+              <div class="d-flex justify-content-between">
+                <h5 class="mb-1">សាំងវិច</h5>
+                <span class="price">$1.50</span>
+              </div>
+              <p class="mb-1 small">នំប៉័ងសាំងវិច</p>
+            </div>
+            <div class="list-group-item bg-transparent border-secondary">
+              <div class="d-flex justify-content-between">
+                <h5 class="mb-1">នំបុ័ង croissant</h5>
+                <span class="price">$1.75</span>
+              </div>
+              <p class="mb-1 small">នំបុ័ង croissant</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <h3 class="menu-category">Cold Drinks ( ត្រជាក់ )</h3>
+          <div class="list-group">
+            <div class="list-group-item bg-transparent border-secondary">
+              <div class="d-flex justify-content-between">
+                <h5 class="mb-1">កាហ្វេទឹកដោះគោស្រស់</h5>
+                <span class="price">$2.00</span>
+              </div>
+              <p class="mb-1 small">
+                កាហ្វេទឹកដោះគោស្រស់ ជា​​​ភេសជ្ជះពិសេសប្រចាំហាងរបស់យើង
+              </p>
+            </div>
+            <div class="list-group-item bg-transparent border-secondary">
+              <div class="d-flex justify-content-between">
+                <h5 class="mb-1">IT តែទឹកកក</h5>
+                <span class="price">$1.50</span>
+              </div>
+              <p class="mb-1 small">តែទឹកកកពិសេសរបស់យើង​ ត្រជាក់ដល់បេះដូង</p>
+            </div>
+            <div class="list-group-item bg-transparent border-secondary">
+              <div class="d-flex justify-content-between">
+                <h5 class="mb-1">កាហ្វេទឹកកក</h5>
+                <span class="price">$1.50</span>
+              </div>
+              <p class="mb-1 small">កាហ្វេទឹកកក អត់ដេក</p>
+            </div>
+          </div>
+
+          <h3 class="menu-category">Lunch ( អាហារថ្ងៃត្រង់ )</h3>
+          <div class="list-group">
+            <div class="list-group-item bg-transparent border-secondary">
+              <div class="d-flex justify-content-between">
+                <h5 class="mb-1">ការ៉េមសូកូឡា</h5>
+                <span class="price">$3.00</span>
+              </div>
+              <p class="mb-1 small">ការ៉េមសូកូឡាជាមួយ topping</p>
+            </div>
+            <div class="list-group-item bg-transparent border-secondary">
+              <div class="d-flex justify-content-between">
+                <h5 class="mb-1">សាំងវិច</h5>
+                <span class="price">$1.50</span>
+              </div>
+              <p class="mb-1 small">នំប៉័ងសាំងវិច</p>
+            </div>
+            <div class="list-group-item bg-transparent border-secondary">
+              <div class="d-flex justify-content-between">
+                <h5 class="mb-1">នំបុ័ង croissant</h5>
+                <span class="price">$1.75</span>
+              </div>
+              <p class="mb-1 small">នំបុ័ង croissant</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="container mb-5 py-5 bg-gruv-bg-light rounded dangrek-regular"
+      id="about"
+    >
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <img
+            src="https://images.pexels.com/photos/2193600/pexels-photo-2193600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            class="img-fluid rounded"
+            alt="Cafe Interior"
+          />
+        </div>
+        <div class="col-lg-6 mt-4 mt-lg-0">
+          <h2 class="section-title">អំពីពួកយើង</h2>
+          <p class="text-lg">
+            At IT Cafe, we're more than just a coffee shop – we're a community
+            built by four passionate tech enthusiasts, led by our
+            caffeine-loving founder, "តែទឹកកក" ("Iced Tea"). We started IT Cafe
+            because we were tired of impersonal workspaces and longed for a
+            place where technology and creativity could flourish together. We
+            poured our coding and design skills into creating a unique space
+            that blends fast Wi-Fi and a dedicated hack space with comfortable
+            seating and delicious, locally-sourced coffee.
+          </p>
+          <p>
+            Our goal is simple: to foster a welcoming environment where
+            everyone, from coders to creatives, can connect, collaborate, and
+            find inspiration. We host workshops, meetups, and events, all with
+            the aim of building a vibrant community. Whether you're debugging
+            code, brainstorming ideas, or just craving a great cup of coffee, we
+            invite you to plug in, recharge, and join us at IT Cafe. We can't
+            wait to welcome you!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mb-5">
+      <h2 class="section-title">Reviews</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 p-3 testiomonial-card">
+            <div class="card-body">
+              <p class="card-text">
+                "កាហ្វេរបស់អ្នកឆ្ងាញ់ដល់បេះដូង! I love you!"
+              </p>
+              <p class="testimonial-author mb-0">— S. Heng</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-3 testiomonial-card">
+            <div class="card-body">
+              <p class="card-text">
+                "ញ៉ាំនំប៉័ងរបស់អ្នកនៅពេលព្រឹកគឺ the Best!"
+              </p>
+              <p class="testimonial-author mb-0">— H. Sokha</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-3 testiomonial-card">
+            <div class="card-body">
+              <p class="card-text">
+                "ខ្ញុំ​ស្រឡាញ់​សោភ័ណភាព​នៃ​កន្លែង​នេះ​។
+                បុគ្គលិកតែងតែរួសរាយរាក់ទាក់!"
+              </p>
+              <p class="testimonial-author mb-0">— M. Thida</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mb-5 py-5 bg-gruv-bg-light rounded" id="order">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="section-title">កម្មង់ Online</h2>
+          <p class="lead mb-4">កម្មង់ឥឡូវនេះ សម្រាប់ការដឹកជញ្ជូនលឿន</p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="#" class="btn btn-primary btn-lg px-4">
+              <i class="bi bi-phone"></i> Call
+            </a>
+            <a href="#" class="btn btn-outline-primary btn-lg px-4">
+              <i class="bi bi-cart"></i> កម្មង់ លើ website
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mb-5 dangrek-regular" id="contact">
+      <h2 class="section-title">ទីតាំង</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-4">
+            <h4>ទីតាំង</h4>
+            <p>123 ឋានសួគ៌<br />កំពង់ស្ពឺ AKU Uni</p>
+          </div>
+          <div class="mb-4">
+            <h4>ម៉ោងបើក</h4>
+            <p>
+              ច័ន្ទ-សុក្រ: 7am - 7pm<br />
+              ថ្ងៃសៅរ៍-អាទិត្យ: 6am - 6pm
+            </p>
+          </div>
+          <div>
+            <h4>ទំនាក់ទំនង</h4>
+            <p>
+              Phone: (+855) 1234-5678<br />
+              Email: cafe@IceTeaCafe.com
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.1091405279753!2d104.53503719999999!3d11.472047499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31093bb37515e9ff%3A0x3e315d491379a43e!2sAngkor%20Khemera%20University%20(Kampong%20Speu)!5e0!3m2!1sen!2skh!4v1744119925486!5m2!1sen!2skh"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center">
+      <div class="container">
+        <div class="mb-4">
+          <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+        </div>
+        <p class="mb-0">© 2025 IT Cafe. All rights reserved.</p>
+        <p class="small">Web Design I</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+  </body>
+</html>
