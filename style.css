@@ -74,17 +74,28 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
+.card-img-top {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  width: 100%;
+}
+
 .card-title {
   color: var(--gruv-yellow);
 }
 
 .hero-section {
-  background: linear-gradient(rgba(40, 40, 40, 0.8), rgba(40, 40, 40, 0.8)),
-    url("https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
-  background-size: cover;
-  background-position: center;
   padding: 100px 0;
   margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.carousel-item {
+  background-color: rgba(40, 40, 40, 0.8);
+}
+
+.carousel-item img {
+  opacity: 0.7;
 }
 
 .hero-title {
@@ -145,14 +156,30 @@ footer {
   text-decoration: none;
 }
 
-.badge-new {
-  background-color: var(--gruv-red);
-  color: var(--gruv-fg);
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+  #menu .card {
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }
 
-.badge-popular {
-  background-color: var(--gruv-green);
-  color: var(--gruv-fg);
+.bg-success {
+  background-color: var(--gruv-green) !important;
+}
+
+.bg-danger {
+  background-color: var(--gruv-red) !important;
+}
+
+.bg-info {
+  background-color: var(--gruv-blue) !important;
+}
+
+.badge {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  padding: 0.5em 0.75em;
 }
 
 .testimonial-card {

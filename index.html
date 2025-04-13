@@ -44,8 +44,56 @@
       </div>
     </nav>
 
-    <section class="hero-section text-center dangrek-regular">
-      <div class="container">
+    <section class="hero-section text-center dangrek-regular position-relative">
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://gruvbox-wallpapers.pages.dev/wallpapers/anime/5m5kLI9.png"
+              class="d-block w-100"
+              alt="Tea"
+              style="height: 70vh; object-fit: cover"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://gruvbox-wallpapers.pages.dev/wallpapers/irl/berries.jpg"
+              class="d-block w-100"
+              alt="Coffee"
+              style="height: 70vh; object-fit: cover"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.pexels.com/photos/2846337/pexels-photo-2846337.jpeg"
+              class="d-block w-100"
+              alt="Dessert"
+              style="height: 70vh; object-fit: cover"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div
+        class="container position-absolute top-50 start-50 translate-middle z-1"
+      >
         <h1 class="hero-title display-3 fw-bold mb-4">&ltIT = តែទឹកកក&gt</h1>
         <p class="hero-subtitle lead mb-5">ផឹកកាហ្វេពេលសរសេរកូដ - The Best!</p>
         <a href="#menu" class="btn btn-primary btn-lg px-4 me-2">មើល ម៉ឺនុយ</a>
@@ -57,73 +105,79 @@
 
     <section class="container mb-5 dangrek-regular" id="menu">
       <h2 class="section-title">ម៉ឺនុយ ពិសេស</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://images.pexels.com/photos/1194030/pexels-photo-1194030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              class="card-img-top"
-              alt="Specialty Tea"
-            />
-            <div class="card-body">
-              <span class="badge badge-new mb-2">NEW</span>
-              <h5 class="card-title">IT = តែទឹកកក</h5>
-              <p class="card-text">តែទឹកកកពិសេសរបស់យើង​ ត្រជាក់ដល់បេះដូង</p>
-              <p class="price">$1.50</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
-              class="card-img-top"
-              alt="Specialty Coffee"
-            />
-            <div class="card-body">
-              <span class="badge badge-new mb-2">NEW</span>
-              <h5 class="card-title">កាហ្វេទឹកដោះគោស្រស់</h5>
-              <p class="card-text">
-                កាហ្វេទឹកដោះគោស្រស់ ជា​​​ភេសជ្ជះពិសេសប្រចាំហាងរបស់យើង
-              </p>
-              <p class="price">$2.00</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://images.pexels.com/photos/2846337/pexels-photo-2846337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              class="card-img-top"
-              alt="Avocado Toast"
-            />
-            <div class="card-body">
-              <span class="badge badge-popular mb-2">POPULAR</span>
-              <h5 class="card-title">ការ៉េមសូកូឡា</h5>
-              <p class="card-text">ការ៉េមសូកូឡាជាមួយ topping</p>
-              <p class="price">$3.00</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img
-              src="https://images.pexels.com/photos/1803516/pexels-photo-1803516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              class="card-img-top"
-              alt="Pancake Stack"
-            />
-            <div class="card-body">
-              <span class="badge badge-popular mb-2">Fresh</span>
-              <h5 class="card-title">ដូងត្រជាក់</h5>
-              <p class="card-text">ទឹកដូង​ រស់ជាតិទឹកដូង</p>
-              <p class="price">$1.50</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="row g-4" id="menu-items"></div>
     </section>
+
+    <script>
+      const menuItems = [
+        {
+          image:
+            "https://images.pexels.com/photos/1194030/pexels-photo-1194030.jpeg",
+          alt: "Iced Tea",
+          badge: { text: "NEW", class: "bg-success" },
+          title: "IT = តែទឹកកក",
+          description: "តែទឹកកកពិសេសរបស់យើង​ ត្រជាក់ដល់បេះដូង",
+          price: "$1.50",
+        },
+        {
+          image: "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5",
+          alt: "Fresh Milk Coffee",
+          badge: { text: "NEW", class: "bg-success" },
+          title: "កាហ្វេទឹកដោះគោស្រស់",
+          description: "កាហ្វេទឹកដោះគោស្រស់ ជា​ភេសជ្ជះពិសេសប្រចាំហាងរបស់យើង",
+          price: "$2.00",
+        },
+        {
+          image:
+            "https://images.pexels.com/photos/2846337/pexels-photo-2846337.jpeg",
+          alt: "Chocolate Ice Cream",
+          badge: { text: "POPULAR", class: "bg-danger" },
+          title: "ការ៉េមសូកូឡា",
+          description: "ការ៉េមសូកូឡាជាមួយ topping",
+          price: "$3.00",
+        },
+        {
+          image:
+            "https://images.pexels.com/photos/1803516/pexels-photo-1803516.jpeg",
+          alt: "Fresh Coconut",
+          badge: { text: "FRESH", class: "bg-info" },
+          title: "ដូងត្រជាក់",
+          description: "ទឹកដូង​ រស់ជាតិទឹកដូង",
+          price: "$1.50",
+        },
+      ];
+
+      function createMenuCards() {
+        const container = document.getElementById("menu-items");
+
+        menuItems.forEach((item) => {
+          const card = document.createElement("div");
+          card.className = "col-12 col-sm-6 col-md-4 mb-4";
+          card.innerHTML = `
+            <div class="card h-100 shadow-sm">
+              <img
+                src="${item.image}"
+                class="card-img-top"
+                alt="${item.alt}"
+                loading="lazy"
+                width="400"
+                height="300"
+                onerror="this.onerror=null;this.src='placeholder.jpg'"
+              >
+              <div class="card-body">
+                <span class="badge ${item.badge.class} mb-2">${item.badge.text}</span>
+                <h5 class="card-title">${item.title}</h5>
+                <p class="card-text">${item.description}</p>
+                <div class="price text-primary fw-bold">${item.price}</div>
+              </div>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", createMenuCards);
+    </script>
 
     <section class="container mb-5 dangrek-regular">
       <h2 class="section-title">ម៉ឺនុយ</h2>
